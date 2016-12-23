@@ -1,0 +1,28 @@
+/deploy
+/target
+/libs
+/gen
+/bin
+bin/*
+gen/*
+project.properties
+maven-eclipse.xml
+
+
+### Java template
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IDE Files #
+.metadata
+.project
+.idea
+.springBeans
+*.iml
+.classpath
+.settings/*
+.externalToolBuilders/*
