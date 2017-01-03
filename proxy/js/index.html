@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p><span id="toggle-all">체크 체크</span></p>
+<ol id="videoList">
+    <li>
+        <input type="checkbox">
+        <a href="https://www.youtube.com/watch?v=ePpPVE-GGJw">T.T</a>
+    </li>
+    <li>
+        <input type="checkbox">
+        <a href="https://www.youtube.com/watch?v=c7rCyll5AeY">Cheer up</a>
+    </li>
+    <li>
+        <input type="checkbox">
+        <a href="https://www.youtube.com/watch?v=8keFZr_dDaA">나비잠</a>
+    </li>
+</ol>
+
+<script>
+    var id = document.getElementById('videoList');
+
+    id.onclick = function(e) {
+        var src, id;
+
+        e = e || window.event;
+        src = e.target || e.srcElement;
+
+        if(src.no)
+    }
+</script>
+</body>
+</html>

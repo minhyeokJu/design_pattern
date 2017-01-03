@@ -1,8 +1,10 @@
 # Proxy Pattern 자바버전
-Proxy Pattern의 공통적인 특징 : Client 객체가 어떤 객체(Subject)의 메소드를 통해 원하는 값이나 행동을 하고자 함
+Proxy Pattern의 공통적인 특징 : Client 객체가 어떤 객체(Subject)의 메소드를 통해 원하는 값이나 행동을 하고자 하는데, 대리인(Proxy)을 세워 데이터 전달을 주고 받는 패턴
 
 ## 1. Proxy 기본형  
-Proxy 기본형을 토대로 다른 종류의 Proxy를 만들 수 있음
+Proxy 기본형을 토대로 다른 종류의 Proxy를 만들 수 있다.   
+Client가 Proxy를 호출하면, 자신이 원하는 RealSubject를 호출 할 수 있다.  
+다만, Proxy가 Subject로 Wrapper 되어있기 때문에 Client는 Proxy가 RealSubject인 줄 안다.
 
 ```java
 public interface Subject {
@@ -85,7 +87,7 @@ class ResourceManagementProxy implements Subject {
 }
 ```
 
-## 4. 가상 Proxy
+## 4. 가상 Proxy(동적, 자원관리 프록시와 같은 것으로 취급도 함)
 실제 객체가 존재하지 않을 때 사용한다.  
 인터페이스만 정의되어있고, 구현이 아직 되어있지 않을 때 사용한다.  
 가상 Proxy에서 시뮬레이션 동작을 하도록 구현하는 테스트용?? 으로 볼 수 있다.  
